@@ -1,11 +1,15 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (confirm("EPILEPSY WARNING: This app may potentially trigger seizures for people with photosensitive epilepsy. Do you want to continue?") === false) {
+    if (confirm(`EPILEPSY WARNING: 
+                This app may potentially trigger seizures 
+                for people with photosensitive epilepsy. 
+                Do you want to continue?`
+    ) === false) {
         return
     }
 
-    const body = document.getElementsByTagName('body')[0]
-    const canvas = document.getElementById('canvas')
+    const body = document.querySelector('body')
+    const canvas = document.querySelector('canvas')
     const ctx = canvas.getContext('2d')
     const centerX = canvas.width / 2
     const centerY = canvas.height / 2
@@ -13,10 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const draw = (radius) => {
         let color = Math.random() < 0.2 ? "black" : colors[Math.floor((Math.random() * colors.length))]
-
         body.style.backgroundColor = color
         canvas.style.backgroundColor = color
-
         ctx.beginPath()
         ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false)
         ctx.fillStyle = color
