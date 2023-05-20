@@ -30,4 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         draw(centerY / 2)
         draw(centerY / 4)
     }, 50)
+
+    "wakeLock" in navigator && navigator.wakeLock.request("screen")
 })
