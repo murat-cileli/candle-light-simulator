@@ -1,5 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+    if (confirm("EPILEPSY WARNING: This app may potentially trigger seizures for people with photosensitive epilepsy. Do you want to continue?") === false) {
+        return
+    }
+
     const canvas = document.getElementById('canvas')
     const body = document.getElementsByTagName('body')[0]
     const ctx = canvas.getContext('2d')
