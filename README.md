@@ -4,8 +4,9 @@ Simulates candle light with HTML5 and JavaScript.
 ## Epilepsy Warning!
 This app may potentially trigger seizures for people with photosensitive epilepsy.
 
-## Screenshot
-![Screenshot](https://github.com/murat-cileli/candle-light-simulator/assets/6532000/e74b7bfc-603c-4d62-83a9-aaab8e019bb9)
+## Effect in a Dark Environment
+https://github.com/murat-cileli/candle-light-simulator/assets/6532000/f8c93cf4-2e42-46cb-86a0-8a5626fcf8ac
 
 ## Live URL
 https://murat.bio/candle/
+
